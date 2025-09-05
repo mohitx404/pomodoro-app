@@ -21,6 +21,7 @@ focusBtn.addEventListener("click", ()=>{
     focusBtn.classList.add("active");
     setTime.innerText = "25:00";
     currentTime = focusTime;
+    clearInterval(timerInterval);
 })
 
 shortBtn.addEventListener("click", ()=>{
@@ -29,6 +30,7 @@ shortBtn.addEventListener("click", ()=>{
     shortBtn.classList.add("active");
     setTime.innerText = "05:00";
     currentTime = shortTime;
+    clearInterval(timerInterval);
 })
 
 longBtn.addEventListener("click", ()=>{
@@ -37,6 +39,7 @@ longBtn.addEventListener("click", ()=>{
     longBtn.classList.add("active");
     setTime.innerText = "15:00";
     currentTime = longTime;
+    clearInterval(timerInterval);
 })
 
 function updateTimer() {
