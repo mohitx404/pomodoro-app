@@ -67,6 +67,12 @@ body.long-break::before {
   width: 100%;
 }
 
+.container-parent {
+  border: 1px solid #f0f0f0;
+  border-radius: 1rem;  
+  padding: 3.5rem;
+}
+
 /* ===== Heading ===== */
 h1 {
   font-family: 'Playfair Display', serif;
@@ -218,5 +224,9 @@ h1 {
   .control-buttons button {
     min-width: 90px;
     padding: 10px 20px;
+  }
+
+  .container-parent {
+    border: none;
   }
 }

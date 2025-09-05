@@ -10,13 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body class="focus">
-  <main class="container">
+  <div class="container-parent">
+    <main class="container">
     <header>
       <h1>Pomodoro Timer</h1>
     </header>
 
     <nav class="mode-buttons" role="tablist" aria-label="Timer modes">
-      <button id="focus-btn" class="active" role="tab" aria-selected="true" aria-controls="timer">Focus</button>
+      <button id="focus-btn"  class="active" role="tab" aria-selected="true" aria-controls="timer">Focus</button>
       <button id="short-break-btn" role="tab" aria-selected="false" aria-controls="timer">Short Break</button>
       <button id="long-break-btn" role="tab" aria-selected="false" aria-controls="timer">Long Break</button>
     </nav>
@@ -30,5 +31,8 @@
       <button id="reset-btn" type="button">Reset</button>
     </div>
   </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
